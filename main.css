@@ -1319,3 +1319,39 @@ body {
   -webkit-animation-play-state: paused !important;
           animation-play-state: paused !important;
 }
+.welcome{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 9999;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.welcome h1{
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.welcome p{
+    font-size: 22px;
+    margin: 8px 0;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #ff4d6d;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background: #ff1e50;
+}
