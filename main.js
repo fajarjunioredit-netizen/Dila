@@ -1,3 +1,3 @@
-onload = () =>{
-        document.body.classList.remove("container");
+window.onload = () => {
+    document.querySelector(".container").classList.remove("container");
 };
