@@ -14,9 +14,9 @@
     <h1 id="typing"></h1>
     <p id="typing2"></p>
 
-    <button id="startBtn" style="display:none;">
-        🎁 Buka Hadiahnya
-    </button>
+    <a href="#" id="startBtn" class="btn" style="display:none;" onclick="mulai()">
+    🎁 Buka Hadiahnya
+    </a>
 </div>
 
 <div class="container">
@@ -345,6 +345,27 @@ function typeText2() {
     } else {
         document.getElementById("startBtn").style.display = "inline-block";
     }
+}
+
+<script>
+const text1 = "Hai Nadilah ❤️";
+const text2 = "Aku punya sesuatu yang ingin aku sampaikan...";
+
+let i = 0;
+let j = 0;
+
+function typeText1() {
+    ...
+}
+
+function typeText2() {
+    ...
+}
+
+function mulai() {
+    document.getElementById("intro").style.display = "none";
+    document.querySelector(".container").style.display = "block";
+    document.body.classList.remove("container");
 }
 
 typeText1();
