@@ -327,51 +327,34 @@ const text2 = "Aku punya sesuatu yang ingin aku sampaikan...";
 let i = 0;
 let j = 0;
 
-function typeText1() {
-    if (i < text1.length) {
+function typeText1(){
+    if(i < text1.length){
         document.getElementById("typing").innerHTML += text1.charAt(i);
         i++;
-        setTimeout(typeText1, 100);
-    } else {
-        setTimeout(typeText2, 500);
+        setTimeout(typeText1,100);
+    }else{
+        setTimeout(typeText2,500);
     }
 }
 
-function typeText2() {
-    if (j < text2.length) {
+function typeText2(){
+    if(j < text2.length){
         document.getElementById("typing2").innerHTML += text2.charAt(j);
         j++;
-        setTimeout(typeText2, 60);
-    } else {
-        document.getElementById("startBtn").style.display = "inline-block";
+        setTimeout(typeText2,60);
+    }else{
+        document.getElementById("startBtn").style.display="inline-block";
     }
 }
 
-<script>
-const text1 = "Hai Nadilah ❤️";
-const text2 = "Aku punya sesuatu yang ingin aku sampaikan...";
-
-let i = 0;
-let j = 0;
-
-function typeText1() {
-    ...
-}
-
-function typeText2() {
-    ...
-}
-
-function mulai() {
-    document.getElementById("intro").style.display = "none";
-    document.querySelector(".container").style.display = "block";
-    document.body.classList.remove("container");
+function mulai(){
+    document.getElementById("intro").style.display="none";
+    document.querySelector(".container").style.display="block";
 }
 
 typeText1();
 </script>
 
 </div>
-
 </body>
 </html>
