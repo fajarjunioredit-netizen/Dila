@@ -352,6 +352,53 @@ function mulai(){
     document.querySelector(".container").style.display="block";
 }
 
+<script>
+setTimeout(() => {
+    const box = document.createElement("div");
+
+    box.innerHTML = `
+    <div id="confess">
+        <h1>💌 Untuk Nadilah</h1>
+
+        <p>
+        Dari awal kenal sampai sekarang, aku selalu nyaman kalau ngobrol sama kamu.
+        Mungkin selama ini aku belum pernah benar-benar bilang.
+        </p>
+
+        <p>
+        Jadi malam ini aku cuma mau jujur...
+        </p>
+
+        <h2>Mau nggak jadi pacar aku? ❤️</h2>
+
+        <div class="btns">
+            <button id="yes">Iya ❤️</button>
+            <button id="no">Enggak 🙈</button>
+        </div>
+    </div>
+    `;
+
+    document.body.appendChild(box);
+
+    const no = document.getElementById("no");
+
+    no.addEventListener("mouseover", () => {
+        no.style.position = "absolute";
+        no.style.left = Math.random() * 80 + "%";
+        no.style.top = Math.random() * 80 + "%";
+    });
+
+    document.getElementById("yes").onclick = () => {
+        document.getElementById("confess").innerHTML = `
+        <h1>❤️</h1>
+        <h2>Makasih ya Nadilah.</h2>
+        <p>Mulai hari ini aku bakal berusaha jadi orang yang bikin kamu bahagia. 🌹</p>
+        `;
+    };
+
+}, 12000);
+</script>
+    
 typeText1();
 </script>
 
