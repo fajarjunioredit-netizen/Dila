@@ -1355,3 +1355,39 @@ body {
 .btn:hover{
     background: #ff1e50;
 }
+.intro{
+    position: fixed;
+    inset: 0;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    z-index: 99999;
+    padding: 20px;
+}
+
+#typing{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#typing2{
+    font-size: 22px;
+    max-width: 400px;
+    line-height: 1.6;
+}
+
+#startBtn{
+    display: none;
+    margin-top: 35px;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 40px;
+    background: #ff4d6d;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
